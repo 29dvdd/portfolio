@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKERS - Sneaker Catalog</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>SNEAKERS</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html" class="active">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="cart.html" class="header-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="profile.html" class="header-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="filters">
+            <h2>Filters</h2>
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search for sneakers...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="sort-wrapper">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="popularity">Popularity</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="men">Men</button>
+            <button class="filter-btn" data-filter="women">Women</button>
+            <button class="filter-btn" data-filter="kids">Kids</button>
+        </section>
+        <div id="catalog">
+            <!-- Product cards will be added here by JavaScript -->
+        </div>
+        <button id="load-more" style="display: none;">Load More</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SNEAKERS. All rights reserved.</p>
+    </footer>
+
+    <!-- Add this new div for the quick view modal -->
+    <div id="quick-view" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="quick-view-content"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
