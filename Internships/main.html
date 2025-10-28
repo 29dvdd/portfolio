@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Internships - Your Gateway to International Experience</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="main.html">
+                        <span>Global</span>Internships
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#advantages">Advantages</a></li>
+                        <li><a href="#geography">Geography</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                        <li><a href="#preparation">Preparation</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#materials">Materials</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="cta-button">
+                    <a href="#apply" class="btn-primary">Apply Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="fade-in">Discover Your Global Career Path</h1>
+                    <p class="fade-in">Gain international experience, build your professional network, and enhance your resume with our premium internship programs across the globe.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#programs" class="btn-primary">Explore Programs</a>
+                        <a href="#how-it-works" class="btn-secondary">How It Works</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <img src="images/hero-image.jpg" alt="Students in international internship">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Advantages Section -->
+        <section id="advantages" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Our Internships?</h2>
+                    <p>Discover the benefits that set our international internship programs apart</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-card" data-aos="fade-up">
+                        <div class="advantage-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Global Network</h3>
+                        <p>Connect with professionals and fellow interns from around the world</p>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Real Work Experience</h3>
+                        <p>Gain hands-on experience in your field with leading companies</p>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="advantage-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Academic Credit</h3>
+                        <p>Many of our programs qualify for academic credit at your institution</p>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="advantage-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Language Immersion</h3>
+                        <p>Improve your language skills through daily use in a professional setting</p>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="advantage-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Cultural Exchange</h3>
+                        <p>Experience new cultures and perspectives firsthand</p>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="advantage-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Career Advancement</h3>
+                        <p>Stand out to employers with international experience on your resume</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geography Section -->
+        <section id="geography" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Global Reach</h2>
+                    <p>Explore internship opportunities across six continents</p>
+                </div>
+                <div class="map-container" data-aos="zoom-in">
+                    <div class="world-map">
+                        <!-- Interactive map will be inserted via JavaScript -->
+                        <div id="map"></div>
+                    </div>
+                    <div class="popular-destinations">
+                        <h3>Popular Destinations</h3>
+                        <div class="destination-grid">
+                            <div class="destination-card" data-aos="fade-right">
+                                <img src="images/Paris.jpg" alt="Paris, France">
+                                <h4>Paris, France</h4>
+                                <p>Fashion, Finance, Hospitality</p>
+                            </div>
+                            <div class="destination-card" data-aos="fade-right" data-aos-delay="100">
+                                <img src="images/Tokyo.jpg" alt="Tokyo, Japan">
+                                <h4>Tokyo, Japan</h4>
+                                <p>Technology, Engineering, Education</p>
+                            </div>
+                            <div class="destination-card" data-aos="fade-right" data-aos-delay="200">
+                                <img src="images/sydney.jpg" alt="Sydney, Australia">
+                                <h4>Sydney, Australia</h4>
+                                <p>Marketing, Tourism, Environmental Science</p>
+                            </div>
+                            <div class="destination-card" data-aos="fade-right" data-aos-delay="300">
+                                <img src="images/New York.jpg" alt="New York, USA">
+                                <h4>New York, USA</h4>
+                                <p>Finance, Media, Arts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Participation Requirements</h2>
+                    <p>What you need to qualify for our international internship programs</p>
+                </div>
+                <div class="requirements-container">
+                    <div class="requirements-content" data-aos="fade-right">
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="requirement-details">
+                                <h3>Academic Standing</h3>
+                                <p>Currently enrolled in or recently graduated from an accredited college or university</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="requirement-details">
+                                <h3>Documentation</h3>
+                                <p>Valid passport and ability to obtain necessary visas for your destination</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="requirement-details">
+                                <h3>Language Proficiency</h3>
+                                <p>Working knowledge of the local language or strong English skills depending on the program</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="requirement-details">
+                                <h3>Professional Attitude</h3>
+                                <p>Demonstrated maturity, adaptability, and commitment to professional growth</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requirements-image" data-aos="fade-left">
+                        <img src="images/requirements-image.jpg" alt="Student preparing application">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparation Section -->
+        <section id="preparation" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How to Prepare</h2>
+                    <p>Essential steps to ensure a successful international internship experience</p>
+                </div>
+                <div class="preparation-timeline" data-aos="fade-up">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h3>Research Your Destination</h3>
+                            <p>Learn about the local culture, customs, and business etiquette of your host country</p>
+                            <a href="#" class="btn-text">Country Guides <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h3>Prepare Your Documents</h3>
+                            <p>Ensure your passport, visa, and other travel documents are in order well in advance</p>
+                            <a href="#" class="btn-text">Document Checklist <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h3>Develop Your Skills</h3>
+                            <p>Brush up on relevant technical and language skills for your specific internship</p>
+                            <a href="#" class="btn-text">Recommended Courses <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h3>Plan Your Finances</h3>
+                            <p>Create a budget for your time abroad, including accommodation, food, and travel</p>
+                            <a href="#" class="btn-text">Budgeting Tools <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">5</div>
+                        <div class="timeline-content">
+                            <h3>Connect with Alumni</h3>
+                            <p>Reach out to past interns for insights and advice about your program</p>
+                            <a href="#" class="btn-text">Alumni Network <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Success Stories</h2>
+                    <p>Hear from students who transformed their careers through our internship programs</p>
+                </div>
+                <div class="testimonials-slider" data-aos="fade-up">
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <div class="testimonial-image">
+                                <img src="images/Sarah.jpg" alt="Sarah J.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p>"My internship in Barcelona completely changed my career trajectory. I gained invaluable experience in international marketing and made connections that led directly to my current job. The support from the Global Internships team was exceptional throughout the entire process."</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <h4>Sarah J.</h4>
+                                    <p>Marketing Intern in Barcelona, Spain</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <div class="testimonial-image">
+                                <img src="images/Michael.jpg" alt="Michael T.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p>"Interning at a tech startup in Tokyo was the highlight of my college experience. I improved my coding skills, learned Japanese, and experienced a completely different work culture. The connections I made there continue to benefit me years later."</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <h4>Michael T.</h4>
+                                    <p>Software Engineering Intern in Tokyo, Japan</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <div class="testimonial-image">
+                                <img src="images/Elena.jpg" alt="Elena R.">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p>"My environmental science internship in Costa Rica was life-changing. I worked on real conservation projects, improved my Spanish, and discovered my passion for sustainable development. The program's emphasis on cultural immersion made the experience truly authentic."</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <h4>Elena R.</h4>
+                                    <p>Environmental Science Intern in San José, Costa Rica</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Section -->
+        <section id="materials" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Useful Materials</h2>
+                    <p>Resources to help you prepare for and make the most of your international experience</p>
+                </div>
+                <div class="materials-grid">
+                    <div class="material-card" data-aos="flip-left">
+                        <div class="material-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Country Guides</h3>
+                        <p>Comprehensive guides to living and working in our most popular destinations</p>
+                        <a href="#" class="btn-text">Download Guides <i class="fas fa-download"></i></a>
+                    </div>
+                    <div class="material-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="material-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Webinar Series</h3>
+                        <p>Expert-led sessions on international work culture and professional development</p>
+                        <a href="#" class="btn-text">Watch Webinars <i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div class="material-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="material-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Resume Templates</h3>
+                        <p>Customizable templates to help you showcase your international experience</p>
+                        <a href="#" class="btn-text">Get Templates <i class="fas fa-download"></i></a>
+                    </div>
+                    <div class="material-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="material-icon">
+                            <i class="fas fa-podcast"></i>
+                        </div>
+                        <h3>Intern Podcast</h3>
+                        <p>Stories and advice from past interns and international career experts</p>
+                        <a href="#" class="btn-text">Listen Now <i class="fas fa-headphones"></i></a>
+                    </div>
+                </div>
+                <div class="materials-cta" data-aos="fade-up">
+                    <h3>Want more resources?</h3>
+                    <p>Sign up for our newsletter to receive monthly updates with the latest resources and opportunities</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? Our team is here to help you navigate your international internship journey</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Our Headquarters</h3>
+                                <p>123 Global Avenue, Suite 456<br>New York, NY 10001, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Monday-Friday, 9am-5pm EST</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@globalinternships.com</p>
+                                <p>applications@globalinternships.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Regional Offices</h3>
+                                <p>London • Tokyo • Sydney • Berlin • São Paulo</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="application">Application Question</option>
+                                    <option value="current">Current Intern Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply Section -->
+        <section id="apply" class="section section-alt cta-section">
+            <div class="container">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2>Ready to Start Your Global Journey?</h2>
+                    <p>Applications are now open for programs starting in Spring, Summer, and Fall 2024</p>
+                    <a href="#" class="btn-primary btn-large">Apply Now</a>
+                    <div class="cta-details">
+                        <div class="cta-detail">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Next Deadline: October 15, 2025</span>
+                        </div>
+                        <div class="cta-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Application Process: 2-4 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <span>Global</span>Internships
+                        </a>
+                    </div>
+                    <p>Connecting talented students with exceptional international internship opportunities since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#advantages">Advantages</a></li>
+                        <li><a href="#geography">Geography</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                        <li><a href="#preparation">Preparation</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#materials">Materials</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-programs">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Business & Finance</a></li>
+                        <li><a href="#">Engineering & Technology</a></li>
+                        <li><a href="#">Marketing & Communications</a></li>
+                        <li><a href="#">Healthcare & Sciences</a></li>
+                        <li><a href="#">Arts & Design</a></li>
+                        <li><a href="#">Hospitality & Tourism</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Global Avenue, Suite 456, New York, NY 10001, USA</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@globalinternships.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Global Internships. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
