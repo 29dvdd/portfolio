@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация - BrainBoost</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="registr.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="main.html">
+          <h1 class="logo">Brain<span>Boost</span></h1>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="main.html#tests">Тесты</a></li>
+          <li><a href="main.html#games">Игры</a></li>
+          <li><a href="main.html#courses">Курсы</a></li>
+          <li><a href="main.html#about">О нас</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#login" class="btn btn-outline">Войти</a>
+        <a href="registr.html" class="btn btn-primary">Регистрация</a>
+      </div>
+      <button class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="registration-section">
+    <div class="container">
+      <div class="registration-container">
+        <div class="registration-content">
+          <div class="registration-header">
+            <h2>Создайте аккаунт</h2>
+            <p>Присоединяйтесь к сообществу BrainBoost и начните развивать свои когнитивные навыки уже сегодня</p>
+          </div>
+          
+          <form id="registration-form" class="registration-form">
+            <div class="form-steps">
+              <div class="step-indicator">
+                <div class="step active" data-step="1">
+                  <div class="step-number">1</div>
+                  <div class="step-title">Основная информация</div>
+                </div>
+                <div class="step" data-step="2">
+                  <div class="step-number">2</div>
+                  <div class="step-title">Профиль</div>
+                </div>
+                <div class="step" data-step="3">
+                  <div class="step-number">3</div>
+                  <div class="step-title">Завершение</div>
+                </div>
+              </div>
+              
+              <div class="step-content">
+                <!-- Step 1 -->
+                <div class="step-pane active" data-step="1">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="error-message" id="email-error"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <div class="input-with-icon">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" id="password" name="password" required>
+                      <button type="button" class="toggle-password">
+                        <i class="fas fa-eye"></i>
+                      </button>
+                    </div>
+                    <div class="password-strength">
+                      <div class="strength-bar">
+                        <div class="strength-indicator"></div>
+                      </div>
+                      <div class="strength-text">Слабый пароль</div>
+                    </div>
+                    <div class="error-message" id="password-error"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="confirm-password">Подтвердите пароль</label>
+                    <div class="input-with-icon">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="error-message" id="confirm-password-error"></div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-primary btn-next">Продолжить</button>
+                  </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-pane" data-step="2">
+                  <div class="form-group">
+                    <label for="fullname">Полное имя</label>
+                    <div class="input-with-icon">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="error-message" id="fullname-error"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="birthdate">Дата рождения</label>
+                    <div class="input-with-icon">
+                      <i class="fas fa-calendar"></i>
+                      <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="error-message" id="birthdate-error"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Интересующие направления</label>
+                    <div class="checkbox-group">
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="memory">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Память</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="attention">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Внимание</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="logic">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Логика</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="speed">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Скорость мышления</span>
+                      </label>
+                    </div>
+                    <div class="error-message" id="interests-error"></div>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-outline btn-prev">Назад</button>
+                    <button type="button" class="btn btn-primary btn-next">Продолжить</button>
+                  </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-pane" data-step="3">
+                  <div class="form-group">
+                    <label class="checkbox-label terms-checkbox">
+                      <input type="checkbox" name="terms" required>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Я принимаю <a href="#terms" class="link">Условия использования</a> и <a href="#privacy" class="link">Политику конфиденциальности</a></span>
+                    </label>
+                    <div class="error-message" id="terms-error"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="newsletter">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Я хочу получать новости и обновления на email</span>
+                    </label>
+                  </div>
+                  
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-outline btn-prev">Назад</button>
+                    <button type="submit" class="btn btn-primary">Создать аккаунт</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+          <div class="social-registration">
+            <p>Или зарегистрируйтесь через</p>
+            <div class="social-buttons">
+              <button class="social-btn google">
+                <i class="fab fa-google"></i>
+                <span>Google</span>
+              </button>
+              <button class="social-btn vk">
+                <i class="fab fa-vk"></i>
+                <span>ВКонтакте</span>
+              </button>
+              <button class="social-btn apple">
+                <i class="fab fa-apple"></i>
+                <span>Apple</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="login-link">
+            Уже есть аккаунт? <a href="#login" class="link">Войти</a>
+          </div>
+        </div>
+        
+        <div class="registration-sidebar">
+          <div class="benefits">
+            <h3>Преимущества регистрации</h3>
+            <ul class="benefits-list">
+              <li>
+                <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="benefit-content">
+                  <h4>Отслеживание прогресса</h4>
+                  <p>Анализируйте свои результаты и следите за улучшениями</p>
+                </div>
+              </li>
+              <li>
+                <div class="benefit-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <div class="benefit-content">
+                  <h4>Персонализированные тренировки</h4>
+                  <p>Получите доступ к индивидуальной программе развития</p>
+                </div>
+              </li>
+              <li>
+                <div class="benefit-icon"><i class="fas fa-trophy"></i></div>
+                <div class="benefit-content">
+                  <h4>Достижения и награды</h4>
+                  <p>Зарабатывайте баллы и разблокируйте новые уровни</p>
+                </div>
+              </li>
+              <li>
+                <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                <div class="benefit-content">
+                  <h4>Сообщество</h4>
+                  <p>Соревнуйтесь с друзьями и другими пользователями</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2 class="logo">Brain<span>Boost</span></h2>
+          <p>Развивай свой мозг каждый день</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Навигация</h3>
+            <ul>
+              <li><a href="main.html#tests">Тесты</a></li>
+              <li><a href="main.html#games">Игры</a></li>
+              <li><a href="main.html#courses">Курсы</a></li>
+              <li><a href="main.html#about">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Правовая информация</h3>
+            <ul>
+              <li><a href="#terms">Условия использования</a></li>
+              <li><a href="#privacy">Политика конфиденциальности</a></li>
+              <li><a href="#cookies">Политика cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="mailto:info@brainboost.ru">info@brainboost.ru</a></li>
+              <li><a href="tel:+78001234567">8 (962) 823-58-19</a></li>
+            </ul>
+            <div class="social-links">
+              <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BrainBoost. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="registr.js"></script>
+</body>
+</html>

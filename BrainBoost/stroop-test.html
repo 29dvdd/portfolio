@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroop Test - Cognitive Challenge</title>
+    <link rel="stylesheet" href="stroop-test.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="main.html" class="logo">Brain<span>Boost</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <div class="language-switcher">
+                    <button id="language-toggle" class="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-language">EN</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="en" class="active">English</a>
+                        <a href="#" data-lang="ru">Русский</a>
+                    </div>
+                </div>
+                <a href="login.html" class="btn btn-outline">Log In</a>
+                <a href="registr.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container stroop-container">
+            <header class="test-header">
+                <h1 id="test-title">Stroop Effect Test</h1>
+                <p id="test-description" class="description">
+                    The Stroop effect demonstrates the interference in reaction time when the color of a word differs from the word's meaning.
+                    <br>Your task is to click the button that corresponds to the <strong>color</strong> of the text, not the word itself.
+                </p>
+            </header>
+
+            <div class="test-container">
+                <div class="test-status">
+                    <div class="status-item">
+                        <span id="score-label" class="status-label">Score:</span>
+                        <span id="score" class="status-value">0</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="time-label" class="status-label">Time:</span>
+                        <span id="timer" class="status-value">60</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="accuracy-label" class="status-label">Accuracy:</span>
+                        <span id="accuracy" class="status-value">0%</span>
+                    </div>
+                </div>
+
+                <div id="word-display" class="word-display">
+                    <span id="color-word">START</span>
+                </div>
+
+                <div class="color-buttons">
+                    <button class="color-btn" data-color="red" style="background-color: #e74c3c;" id="btn-red">Red</button>
+                    <button class="color-btn" data-color="blue" style="background-color: #3498db;" id="btn-blue">Blue</button>
+                    <button class="color-btn" data-color="green" style="background-color: #2ecc71;" id="btn-green">Green</button>
+                    <button class="color-btn" data-color="yellow" style="background-color: #f1c40f;" id="btn-yellow">Yellow</button>
+                    <button class="color-btn" data-color="purple" style="background-color: #9b59b6;" id="btn-purple">Purple</button>
+                </div>
+
+                <div class="control-buttons">
+                    <button id="start-btn" class="control-btn start-btn">
+                        <i class="fas fa-play"></i> <span id="start-text">Start Test</span>
+                    </button>
+                    <button id="restart-btn" class="control-btn restart-btn" disabled>
+                        <i class="fas fa-redo"></i> <span id="restart-text">Restart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="results" class="results-container hidden">
+                <h2 id="results-title">Test Results</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="result-value" id="final-score">0</div>
+                        <div class="result-label" id="final-score-label">Final Score</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="result-value" id="final-accuracy">0%</div>
+                        <div class="result-label" id="final-accuracy-label">Accuracy</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="result-value" id="avg-reaction-time">0ms</div>
+                        <div class="result-label" id="reaction-time-label">Avg. Reaction Time</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="result-value" id="correct-answers">0</div>
+                        <div class="result-label" id="correct-answers-label">Correct Answers</div>
+                    </div>
+                </div>
+                <div class="result-message" id="result-message">
+                    Great job! Your performance shows good cognitive processing speed.
+                </div>
+                <button id="share-results" class="share-btn">
+                    <i class="fas fa-share-alt"></i> <span id="share-text">Share Results</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="main.html" class="logo">Brain<span>Boost</span></a>
+                    <p id="footer-description">Enhancing cognitive abilities through engaging brain training games and exercises.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 id="quick-links-title">Quick Links</h3>
+                        <ul>
+                            <li><a href="main.html" id="nav-home">Home</a></li>
+                            <li><a href="games.html" id="nav-games">Games</a></li>
+                            <li><a href="about.html" id="nav-about">About Us</a></li>
+                            <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="games-title">Games</h3>
+                        <ul>
+                            <li><a href="stroop-test.html" id="nav-stroop">Stroop Test</a></li>
+                            <li><a href="memory-game.html" id="nav-memory">Memory Game</a></li>
+                            <li><a href="reaction-time.html" id="nav-reaction">Reaction Time</a></li>
+                            <li><a href="number-sequence.html" id="nav-number">Number Sequence</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="support-title">Support</h3>
+                        <ul>
+                            <li><a href="faq.html" id="nav-faq">FAQ</a></li>
+                            <li><a href="privacy.html" id="nav-privacy">Privacy Policy</a></li>
+                            <li><a href="terms.html" id="nav-terms">Terms of Service</a></li>
+                            <li><a href="help.html" id="nav-help">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright">&copy; 2025 BrainBoost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="stroop-test.js"></script>
+</body>
+</html>

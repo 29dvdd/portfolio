@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrainBoost - Развивай свой мозг</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <h1 class="logo">Brain<span>Boost</span></h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#tests">Тесты</a></li>
+          <li><a href="#games">Игры</a></li>
+          <li><a href="#courses">Курсы</a></li>
+          <li><a href="#about">О нас</a></li>
+        </ul>
+      </nav>
+      <div class="language-toggle">
+        <button class="language-btn">
+          <span id="current-language">RU</span>
+          <i class="fas fa-globe"></i>
+        </button>
+        <div class="language-dropdown">
+          <a href="#" data-lang="ru" class="active">Русский</a>
+          <a href="#" data-lang="en">English</a>
+        </div>
+      </div>
+      <div class="auth-buttons">
+        <a href="#login" class="btn btn-outline">Войти</a>
+        <a href="registr.html" class="btn btn-primary">Регистрация</a>
+      </div>
+      <button class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="hero-title">Тренируй мозг.<br>Развивай навыки.</h2>
+        <p class="hero-subtitle">Интерактивные тесты и игры для развития когнитивных способностей</p>
+        <div class="hero-cta">
+          <a href="#tests" class="btn btn-primary btn-large">Начать бесплатно</a>
+          <a href="#how-it-works" class="btn btn-secondary btn-large">Как это работает</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="brain-animation">
+          <div class="brain-pulse"></div>
+          <div class="brain-connections"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="tests" class="tests">
+    <div class="container">
+      <h2 class="section-title">Популярные тесты</h2>
+      <div class="test-categories">
+        <button class="category-btn active" data-category="all">Все</button>
+        <button class="category-btn" data-category="memory">Память</button>
+        <button class="category-btn" data-category="attention">Внимание</button>
+        <button class="category-btn" data-category="logic">Логика</button>
+        <button class="category-btn" data-category="speed">Скорость</button>
+      </div>
+      <div class="cards test-cards">
+        <div class="card test-card" data-category="memory">
+          <div class="card-image">
+            <img src="images/memory.png" alt="Тест на память">
+            <div class="card-badge">Популярное</div>
+          </div>
+          <div class="card-content">
+            <h3>Тест на кратковременную память</h3>
+            <p>Проверьте, насколько хорошо вы запоминаете информацию за короткий промежуток времени.</p>
+            <div class="card-meta">
+              <span><i class="fas fa-clock"></i> 5 минут</span>
+              <span><i class="fas fa-user"></i> 12K+</span>
+            </div>
+            <a href="#memory-test" class="btn btn-primary">Пройти тест</a>
+          </div>
+        </div>
+        <div class="card test-card" data-category="attention">
+          <div class="card-image">
+            <img src="images/strup.jpg" alt="Тест на внимание">
+          </div>
+          <div class="card-content">
+            <h3>Тест Струпа</h3>
+            <p>Оцените свою способность концентрироваться и игнорировать отвлекающие факторы.</p>
+            <div class="card-meta">
+              <span><i class="fas fa-clock"></i> 3 минуты</span>
+              <span><i class="fas fa-user"></i> 8K+</span>
+            </div>
+            <a href="stroop-test.html" class="btn btn-primary">Пройти тест</a>
+          </div>
+        </div>
+        <div class="card test-card" data-category="logic">
+          <div class="card-image">
+            <img src="images/puzzle.png" alt="Тест на логику">
+          </div>
+          <div class="card-content">
+            <h3>Логические головоломки</h3>
+            <p>Решайте задачи, требующие нестандартного мышления и логического анализа.</p>
+            <div class="card-meta">
+              <span><i class="fas fa-clock"></i> 10 минут</span>
+              <span><i class="fas fa-user"></i> 5K+</span>
+            </div>
+            <a href="#logic-test" class="btn btn-primary">Пройти тест</a>
+          </div>
+        </div>
+        <div class="card test-card" data-category="speed">
+          <div class="card-image">
+            <img src="images/reaction.png" alt="Тест на скорость">
+            <div class="card-badge">Новинка</div>
+          </div>
+          <div class="card-content">
+            <h3>Тест на скорость реакции</h3>
+            <p>Проверьте, насколько быстро вы можете реагировать на визуальные стимулы.</p>
+            <div class="card-meta">
+              <span><i class="fas fa-clock"></i> 2 минуты</span>
+              <span><i class="fas fa-user"></i> 3K+</span>
+            </div>
+            <a href="#reaction-test" class="btn btn-primary">Пройти тест</a>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-container">
+        <a href="#all-tests" class="btn btn-outline btn-large">Смотреть все тесты</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="games">
+    <div class="container">
+      <h2 class="section-title">Развивающие игры</h2>
+      <div class="games-grid">
+        <div class="game-card">
+          <div class="game-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Мемори</h3>
+          <p>Тренируйте память, находя пары одинаковых карточек</p>
+          <a href="#memory-game" class="btn btn-secondary">Играть</a>
+        </div>
+        <div class="game-card">
+          <div class="game-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <h3>Судоку</h3>
+          <p>Развивайте логическое мышление с помощью числовых головоломок</p>
+          <a href="#sudoku-game" class="btn btn-secondary">Играть</a>
+        </div>
+        <div class="game-card">
+          <div class="game-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Математический тренажер</h3>
+          <p>Улучшайте навыки устного счета и скорость мышления</p>
+          <a href="#math-game" class="btn btn-secondary">Играть</a>
+        </div>
+        <div class="game-card">
+          <div class="game-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Словесные ассоциации</h3>
+          <p>Расширяйте словарный запас и тренируйте ассоциативное мышление</p>
+          <a href="#word-game" class="btn btn-secondary">Играть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Регистрация</h3>
+            <p>Создайте бесплатный аккаунт для отслеживания прогресса</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Диагностика</h3>
+            <p>Пройдите начальные тесты для определения ваших сильных и слабых сторон</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Тренировки</h3>
+            <p>Регулярно выполняйте упражнения, подобранные специально для вас</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Анализ</h3>
+            <p>Отслеживайте свой прогресс и корректируйте программу тренировок</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">О проекте BrainBoost</h2>
+        <p>BrainBoost — это платформа для развития когнитивных способностей через интерактивные тесты и игры. Мы объединяем научный подход к тренировке мозга с увлекательным игровым процессом.</p>
+        <p>Наша миссия — сделать развитие интеллектуальных способностей доступным и увлекательным для каждого.</p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Тестов и игр</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100K+</div>
+            <div class="stat-label">Пользователей</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5M+</div>
+            <div class="stat-label">Пройденных тестов</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Готовы начать тренировку мозга?</h2>
+      <p>Присоединяйтесь к тысячам пользователей, которые уже улучшили свои когнитивные способности</p>
+      <a href="#register" class="btn btn-primary btn-large">Начать бесплатно</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2 class="logo">Brain<span>Boost</span></h2>
+          <p>Развивай свой мозг каждый день</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Навигация</h3>
+            <ul>
+              <li><a href="#tests">Тесты</a></li>
+              <li><a href="#games">Игры</a></li>
+              <li><a href="#courses">Курсы</a></li>
+              <li><a href="#about">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Правовая информация</h3>
+            <ul>
+              <li><a href="#terms">Условия использования</a></li>
+              <li><a href="#privacy">Политика конфиденциальности</a></li>
+              <li><a href="#cookies">Политика cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="mailto:info@brainboost.ru">info@brainboost.ru</a></li>
+              <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+            </ul>
+            <div class="social-links">
+              <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 BrainBoost. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="main.js"></script>
+  </body>
+  </html>
